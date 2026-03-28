@@ -1,4 +1,5 @@
 ﻿using HackathanChecker.DTOs;
+using HackathanChecker.DTOS;
 using HackathanChecker.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 

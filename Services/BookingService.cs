@@ -1,6 +1,9 @@
 ﻿using HackathanChecker.DTOS;
+using HackathanChecker.Models;
 using HackathanChecker.Repositories.Interfaces;
 using HackathanChecker.Services.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using NewWebApplication.Data;
 
 namespace HackathanChecker.Services
 {
@@ -47,6 +50,15 @@ namespace HackathanChecker.Services
                 await transaction.RollbackAsync();
                 return "Error";
             }
+        }
+
+        public async Task<List<Booking>> GetUserBookings(int userId)
+        {
+            return await _context.Bookings
+                .Where(b => b.UserId == userId)
+                .Include(b => b.Room)   
+                .OrderByDescending(b => b.CheckIn)
+                .ToListAsync();
         }
     }
 }

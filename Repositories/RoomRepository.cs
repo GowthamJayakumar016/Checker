@@ -1,6 +1,7 @@
 ﻿using HackathanChecker.Models;
 using HackathanChecker.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using NewWebApplication.Data;
 
 public class RoomRepository : IRoomRepository
 {
@@ -11,7 +12,7 @@ public class RoomRepository : IRoomRepository
         _context = context;
     }
 
-    // 🔹 Get Room Types for Admin Hotel
+    
     public async Task<List<RoomType>> GetRoomTypesByHotelId(int hotelId)
     {
         return await _context.RoomTypes

@@ -1,4 +1,6 @@
-﻿namespace HackathanChecker.Models
+﻿
+
+namespace HackathanChecker.Models
 {
     public class Booking
     {

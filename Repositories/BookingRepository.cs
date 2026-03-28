@@ -1,4 +1,7 @@
-﻿using HackathanChecker.Repositories.Interfaces;
+﻿using HackathanChecker.Models;
+using HackathanChecker.Repositories.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using NewWebApplication.Data;
 
 namespace HackathanChecker.Repositories
 {

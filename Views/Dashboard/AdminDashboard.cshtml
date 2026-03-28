@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<div class="container mt-4">
+
+    <h2 class="mb-4">Admin Dashboard</h2>
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="card shadow p-3">
+                <h5>Manage Hotels</h5>
+                <p>Add or edit hotel details</p>
+                <a href="#" class="btn btn-primary">Go</a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow p-3">
+                <h5>Manage Room Types</h5>
+                <p>Set price and types</p>
+                <a href="#" class="btn btn-primary">Go</a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow p-3">
+                <h5>Manage Rooms</h5>
+                <p>Add room numbers</p>
+                <a href="#" class="btn btn-primary">Go</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row mt-4">
+
+        <div class="col-md-4">
+            <div class="card shadow p-3">
+                <h5>View Bookings</h5>
+                <p>See all reservations</p>
+                <a href="#" class="btn btn-success">View</a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow p-3">
+                <h5>Logout</h5>
+                <p>End your session</p>
+                <a asp-controller="Auth" asp-action="Logout" class="btn btn-danger">Logout</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>

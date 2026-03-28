@@ -1,4 +1,6 @@
-﻿namespace HackathanChecker.Repositories.Interfaces
+﻿using HackathanChecker.Models;
+
+namespace HackathanChecker.Repositories.Interfaces
 {
     public interface IBookingRepository
     {

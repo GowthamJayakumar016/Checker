@@ -1,6 +1,7 @@
 ﻿using HackathanChecker.Models;
 using HackathanChecker.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using NewWebApplication.Data;
 
 public class AdminController : Controller
 {

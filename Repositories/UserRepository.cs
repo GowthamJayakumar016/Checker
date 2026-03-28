@@ -1,7 +1,9 @@
-﻿using HackathanChecker.Data;
+﻿
+
 using HackathanChecker.Models;
 using HackathanChecker.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using NewWebApplication.Data;
 
 namespace HackathanChecker.Repositories
 {
@@ -14,7 +16,7 @@ namespace HackathanChecker.Repositories
             _context = context;
         }
 
-        public async Task<User> GetByEmailAsync(string email)
+        public async Task<User> GetUserByEmailAsync(string email)
         {
             return await _context.Users
                 .FirstOrDefaultAsync(u => u.Email == email);
