@@ -1,0 +1,34 @@
+﻿@model HackathanChecker.DTOs.BookingDto
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<div class="container mt-5">
+    <div class="col-md-6 offset-md-3">
+        <div class="card shadow p-4">
+
+            <h3 class="text-center mb-3">Book Room</h3>
+
+            <form asp-action="Book" method="post">
+
+                <div class="mb-3">
+                    <label>Room ID</label>
+                    <input asp-for="RoomId" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label>Check-In</label>
+                    <input asp-for="CheckIn" type="date" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label>Check-Out</label>
+                    <input asp-for="CheckOut" type="date" class="form-control" />
+                </div>
+
+                <button class="btn btn-success w-100">Confirm Booking</button>
+
+            </form>
+
+        </div>
+    </div>
+</div>
